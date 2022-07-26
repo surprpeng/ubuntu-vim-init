@@ -13,3 +13,5 @@ sudo apt install clang-11 clang-tools-11 clang-11-doc libclang-common-11-dev \
 sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-11 100
 sudo apt-get install nodejs
 
+
+mv ./.vimrc ~/.vimrc
