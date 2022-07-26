@@ -2,8 +2,19 @@
 Scripts to automatically install and configure Vim on Ubuntu, not only vim
 before run install.sh, you need to do as fllow on a new system:
 
-step 1 : Replace /etc/apt/source.list as required.
-
+step 1 : Replace /etc/apt/source.list as required. eg. execute the following commend
+```
+sudo bash -c "cat << EOF > /etc/apt/sources.list && apt update 
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+EOF"
+```
 step 2 : install git and clone this source code from GitHub
 
 step 3 : add the following to the file /etc/hosts
