@@ -35,7 +35,8 @@ filetype indent on
 
 
 nnoremap Z ZZ
-nnoremap Q :wa!<CR>:qa!<CR>
+nnoremap q :q!<CR>
+nnoremap s :w!<CR>
 nnoremap H ^
 nnoremap L $
 vnoremap H ^
